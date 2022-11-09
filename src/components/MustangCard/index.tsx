@@ -1,16 +1,28 @@
-import { Container } from "./styles";
+import { Container, DetailsGroup } from "./styles";
+import { Button } from "../Button";
+import { Details } from "../Details";
+import { detailsList } from "./details-const";
 
-export function MustangCard() {
+interface MustangProps {
+    image: string
+    title: string 
+}
+
+
+export function MustangCard({image,title}: MustangProps) {
+
     return(
         <Container>
-            <h1>
-                Mustang
-            </h1>
-            <p>2015</p>
-            <p>2015</p>
-            <p>2015</p>
-            <p>2015</p>
-            <button>Ver Carro</button>
+          <h1>{title}</h1>
+            <img src={image} width={228} height={171}/>
+            <DetailsGroup>
+                {
+                    detailsList.map((item) => {
+                        return <Details text={item.text} icon={item.icon}/>
+                    })
+                }
+            </DetailsGroup>
+            <Button/>
         </Container>
     )
 }

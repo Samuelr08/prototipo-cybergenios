@@ -1,4 +1,5 @@
-import { createGlobalStyle } from "styled-components";
+import styled,{ createGlobalStyle } from "styled-components";
+
 
 export const GlobalStyle = createGlobalStyle`
     * {
@@ -18,3 +19,11 @@ export const GlobalStyle = createGlobalStyle`
     }
 
 `
+export const MainContainer = styled.div`
+    
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    overflow-x: hidden;
+    position: relative;
+`;
