@@ -8,6 +8,11 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html{ 
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
     body {
         background-color: #EBEFF2;
     }
@@ -18,12 +23,4 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 1rem;
     }
 
-`
-export const MainContainer = styled.div`
-    
-    width: 100vw;
-    height: 100vh;
-    flex-direction: column;
-    overflow-x: hidden;
-    position: relative;
 `;
