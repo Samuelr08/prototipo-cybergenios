@@ -38,10 +38,6 @@ export function Header() {
                         <Icon icon={DetailsIconEnum.user} style={{ fontSize: '24px' }} />
                     </IconUser>
                 </HeaderItems>
-                <DescriptionTitle>
-                    <h1>MUSTANG</h1>
-                </DescriptionTitle>
-
             </>
         </Container>
     )

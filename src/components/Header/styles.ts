@@ -10,8 +10,10 @@ export const Container = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: top;
-    border-bottom-left-radius: 0;
+
+    @media (max-width: 960px) {
+        height: calc(100vw * 0.5625);
+    }
 `;
 
 export const DescriptionTitle = styled.div`
