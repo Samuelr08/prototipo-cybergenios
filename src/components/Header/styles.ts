@@ -50,11 +50,12 @@ export const DescriptionTitle = styled.div`
         max-width: 1080px;
         margin: 0 auto;
         transition: all 0.2s ease-in-out;
+        
 
         @media (max-width: 768px) {
             flex-direction: column;
             background-color: ${props => props.theme.colors.white};
-            border-top-right-radius: 12px;
+            border-radius: 0px 24px 24px 0px;
             gap: 32px;
             justify-content: flex-start;
             transform: translateX(-270px);
@@ -67,6 +68,7 @@ export const DescriptionTitle = styled.div`
             align-items: flex-start;
             padding-left: 24px;
             padding-top: 40px;
+            box-shadow: 3px 0px 9px rgba(0, 0, 0, 0.15);
         }
 
         a {

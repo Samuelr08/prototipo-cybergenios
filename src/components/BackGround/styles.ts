@@ -11,6 +11,11 @@ export const Container = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 92px;
+
+    @media (max-width: 1024px){
+        height: auto;
+    }
+
 `;
 
 export const DescriptionBox = styled.div`
@@ -19,8 +24,11 @@ export const DescriptionBox = styled.div`
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    
 
+    @media (max-width: 1024px) {
+        justify-content: center;
+    }
+    
 `;
 
 export const DescriptionGroup = styled.div`
@@ -34,6 +42,11 @@ export const DescriptionGroup = styled.div`
     margin-right: calc((100vw - 1080px)/2);
     margin-left: 16px;
 
+    @media (max-width: 1024px) {
+        width: 100%;
+        margin-right: 24px;
+        margin-bottom: 32px;
+    }
 
     h1  {
         font-weight: 400;
@@ -50,6 +63,10 @@ export const DescriptionGroup = styled.div`
         line-height: 2;
         text-align: right;
         margin-bottom: 32px;
+
+        @media (max-width: 1024px) {
+            font-size: ${props => props.theme["sizes-mobile"].sm};
+        }
     }
 
     button {
@@ -75,5 +92,12 @@ export const DescriptionBlur = styled.div`
     backdrop-filter: blur(8.5px);
     background: linear-gradient(270deg, rgba(29, 37, 39, 0.6) 0%, rgba(29, 37, 39, 0.6) 24.79%, rgba(29, 37, 39, 0.534) 54.48%, rgba(29, 37, 39, 0.006) 78.67%, rgba(29, 37, 39, 0) 100%);
     filter: opacity(80%);
+
+    @media (max-width: 1024px) {
+        backdrop-filter: blur(0);
+        background: none;
+        width: 100%;
+        background-color: rgba(0,0,0,0.25);
+    }
 `;
 
